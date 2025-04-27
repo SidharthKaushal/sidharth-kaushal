@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary:#222222;
+  --color-main: #fd3c00;
+  --color-main-hover:#ff6737;
+  --color-secondary:#7B7B7B;
+  --color-ternary:#F8F8F8;
+  --color-light:#FFFFFF;
+  --color-light-dark:#f3f3f3;
+  --font-primary: Arial, sans-serif;
+  --text-md: 16px
+  /* --container-8xl: 1280px; */
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1,h2,h3,h4,h5,h6,ul,ol{color: #222222;}
