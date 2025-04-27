@@ -1,6 +1,5 @@
 import { ExperienceCard } from "../components/ExperienceCard";
 import { SectionHeadingPrimary } from "../components/SectionHeadingPrimary";
-import { EXPERIENCE } from "../data/experience";
 export const ExperienceSection = () => {
   return (
     <>
@@ -14,13 +13,7 @@ export const ExperienceSection = () => {
             user-friendly websites while ensuring high-quality results and
             client satisfaction.`}
           />
-          <ul className="flex flex-col gap-4">
-            {EXPERIENCE.slice()
-              .reverse()
-              .map((e, i) => (
-                <ExperienceCard {...e} key={i}/>
-              ))}
-          </ul>
+          <ExperienceCard/>
         </div>
       </section>
     </>
