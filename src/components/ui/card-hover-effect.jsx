@@ -64,9 +64,9 @@ export const Card = ({ className, children }) => {
 };
 export const CardTitle = ({ className, children }) => {
   return (
-    <h4 className={cn("mt-5 text-center text-md", className)}>
+    <p className={cn("mt-5 text-center text-md", className)}>
       {children}
-    </h4>
+    </p>
   );
 };
 
