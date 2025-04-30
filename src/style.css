@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
-
 @theme{
   --color-primary:#222222;
   --color-main: #fd3c00;
@@ -8,7 +8,8 @@
   --color-ternary:#F8F8F8;
   --color-light:#FFFFFF;
   --color-light-dark:#f3f3f3;
-  --font-primary: Arial, sans-serif;
+  --font-primary:"Syne", sans-serif;
+  --font-secondary: Arial, sans-serif;
   --text-md: 16px
   /* --container-8xl: 1280px; */
 }
@@ -17,3 +18,6 @@
   padding: 0 15px;
 }
 h1,h2,h3,h4,h5,h6,ul,ol{color: #222222;}
+h1,h2,h3,h4,h5,h6{font-family: var(--font-primary);}
+
+

@@ -1,3 +1,5 @@
+import { image } from "framer-motion/client";
+
 export const EXPERIENCE = [
     {
         id: 0,
@@ -10,6 +12,7 @@ export const EXPERIENCE = [
         description: "Web developer and designer in Chandigarh, Worked over 4 years",
         tags: ["UI/UX", "Designing"],
         link: "https://www.xyz.com/",
+        image: "https://www.rackron.com/assets/images/logo.png",
         highlights: [
             "Developed a responsive web application using React.js and Node.js.",
             "Implemented RESTful APIs for seamless data communication.",

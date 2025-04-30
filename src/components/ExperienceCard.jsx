@@ -66,13 +66,13 @@ export const ExperienceCard = ({ e }) => {
             <motion.div
               layoutId={`card-${active.companyName}-${id}`} // Use companyName for unique ID
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[920px]  h-full md:h-fit md:max-h-[90%]  flex  bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.companyName}-${id}`}>
                 <img
                   width={200}
                   height={200}
-                  src={active.src} // Ensure this is correctly set in the active object
+                  src={active.image} // Ensure this is correctly set in the active object
                   alt={active.companyName}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
