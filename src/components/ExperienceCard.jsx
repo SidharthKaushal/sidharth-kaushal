@@ -136,9 +136,9 @@ export const ExperienceCard = ({ e }) => {
             onClick={() => setActive(card)} // Set active experience data
             className=" hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <li className="grid grid-cols-3 w-full justify-between items-center gap-4 py-5 border-b-1 border-gray-300 border-opacity-50">
+            <li className="group grid grid-cols-3 w-full justify-between items-center gap-4 py-5 px-3 border-b-1 border-gray-300 border-opacity-50 hover:bg-light-dark duration-300">
               <div>
-                <h3 className="text-xl">
+                <h3 className=" text-xl text-black">
                   {card.designation}, <span> {card.location}</span>
                 </h3>
                 <p className="text-secondary mt-2 flex items-center gap-2 relative before:content-[''] before:h-[4px] before:w-[4px] before:bg-secondary before:absolute before:rounded-full before:left-0 before:top-[7px] ps-3">

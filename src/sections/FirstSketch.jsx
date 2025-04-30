@@ -8,7 +8,7 @@ export const FirstSketch = () => {
       <div className="container h-full">
         <div className="bg-light-dark p-10 rounded-3xl h-full flex flex-col justify-between">
           <div className="flex justify-between items-start">
-            <h2 className="capitalize text-6xl leading-18 w-[40%]">
+            <h2 className="capitalize text-6xl leading-18 w-[40%] text-black">
               From First Sketch to Final Launch
             </h2>
             <Link
