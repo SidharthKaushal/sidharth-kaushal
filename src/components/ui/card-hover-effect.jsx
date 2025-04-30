@@ -14,7 +14,7 @@ export const HoverEffect = ({ items, className }) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <div
           href={item?.link}
           key={idx}
           className="relative group  block p-2 h-full w-full"
@@ -42,7 +42,7 @@ export const HoverEffect = ({ items, className }) => {
             <CardImage>{item.image}</CardImage>
             <CardTitle>{item.language}</CardTitle>
           </Card>
-        </a>
+        </div>
       ))}
     </div>
   );
