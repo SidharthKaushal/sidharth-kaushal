@@ -18,84 +18,98 @@ export const SKILLS = [
         id: 0,
         percentage: 95,
         language: "HTML5",
-        image: html
+        image: html,
+        alt: "HTML5 logo"
     },
     {
         id: 1,
         percentage: 95,
         language: "CSS3",
-        image: css
+        image: css,
+        alt: "CSS3 logo"
     },
     {
         id: 2,
         percentage: 60,
         language: "SASS",
-        image: sass
+        image: sass,
+        alt: "SASS logo"
     },
     {
         id: 3,
         percentage: 90,
         language: "Bootstrap",
-        image: bootstrap
+        image: bootstrap,
+        alt: "Bootstrap logo"
     },
     {
         id: 4,
         percentage: 80,
         language: "Tailwind CSS",
-        image: tailwind
+        image: tailwind,
+        alt: "Tailwind CSS logo"
     },
     {
         id: 5,
         percentage: 70,
         language: "JavaScript ES6+",
-        image: js
+        image: js,
+        alt: "JavaScript ES6+ logo"
     },
     {
         id: 6,
         percentage: 65,
         language: "React js",
-        image: react
+        image: react,
+        alt: "React JS logo"
     },
     {
         id: 7,
         percentage: 80,
         language: "GitHub",
-        image: github
+        image: github,
+        alt: "GitHub logo"
     },
     {
         id: 8,
         percentage: 75,
         language: "Git",
-        image: git
+        image: git,
+        alt: "Git logo"
     },
     {
         id: 9,
         percentage: 85,
         language: "Canva",
-        image: canva
+        image: canva,
+        alt: "Canva logo"
     },
     {
         id: 10,
         percentage: 70,
         language: "Figma",
-        image: figma
+        image: figma,
+        alt: "Figma logo"
     },
     {
         id: 11,
         percentage: 80,
         language: "Adobe XD",
-        image: adobe
+        image: adobe,
+        alt: "Adobe XD logo"
     },
     {
         id: 12,
         percentage: 80,
         language: "WordPress",
-        image: wordpress
+        image: wordpress,
+        alt: "WordPress logo"
     },
     {
         id: 13,
         percentage: 75,
         language: "SEO",
-        image: seo
+        image: seo,
+        alt: "SEO icon"
     }
 ];

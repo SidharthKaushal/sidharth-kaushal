@@ -9,13 +9,12 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-7 ",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-7",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
-          href={item?.link}
           key={idx}
           className="relative group  block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -70,10 +69,11 @@ export const CardTitle = ({ className, children }) => {
   );
 };
 
-export const CardImage = ({ className, children }) => {
+export const CardImage = ({ className, children, alt }) => {
   return (
     <img
       src={children}
+      alt={alt}
       className={cn(
         "w-16 m-auto",
         className
