@@ -25,7 +25,7 @@ export const TestimonialCard = () => {
       {TESTIMONIALS.map((t, idx) => (
         <SwiperSlide key={t.id} className="py-4">
           <div
-            className="relative group px-5 pb-7 pt-3 h-96"
+            className="relative group p-3 h-96"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
@@ -60,7 +60,7 @@ export const TestimonialCard = () => {
                           <div
                             key={msgIndex}
                             className={`bg-light-dark rounded-xl p-3 duration-300 ${
-                              message.tag === "sender" && "group-hover:bg-[#fecfc0]"
+                              message.tag === "sender" && "group-hover:bg-[#ffb8a3] group-hover:text-light"
                             }`}
                           >
                             {msg}
