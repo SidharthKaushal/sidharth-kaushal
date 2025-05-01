@@ -1,52 +1,49 @@
-import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 import { TESTIMONIALS } from "../data/testimonial";
 
 export const TestimonialCard = () => {
   return (
     <>
-      {TESTIMONIALS.map((t) => (
-        <div key={t.id}>
-          {t.messages.map((message, index) => {
-            const isMessageArray = Array.isArray(message.userMessage);
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        {TESTIMONIALS.map((t) => (
+          <SwiperSlide key={t.id}>
+            {t.messages.map((message, index) => {
+              const isMessageArray = Array.isArray(message.userMessage);
 
-            return (
-              <div
-                key={index}
-                className={`${
-                  message.tag === "sender" ? "items-end" : "items-start"
-                }`}
-              >
-                <div className="">
-                  {message.userName}
+              return (
+                <div
+                  key={index}
+                  className={`${
+                    message.tag === "sender" ? "items-end" : "items-start"
+                  }`}
+                >
+                  <div>{message.userName}</div>
+
+                  {isMessageArray ? (
+                    <div>
+                      {message.userMessage.map((msg, msgIndex) => (
+                        <div
+                          key={msgIndex}
+                          className={`${
+                            message.tag === "sender" ? "sender" : "reciver"
+                          }`}
+                        >
+                          {msg}
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div>{message.userMessage}</div>
+                  )}
                 </div>
-
-                {isMessageArray ? (
-                  <div className="">
-                    {message.userMessage.map((msg, msgIndex) => (
-                      <div
-                        key={msgIndex}
-                        className={`${
-                          message.tag === "sender"
-                            ? "sender"
-                            : "reciver"
-                        }`}
-                      >
-                        {msg}
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div
-                    // className={}
-                  >
-                    {message.userMessage}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      ))}
+              );
+            })}
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </>
   );
 };
