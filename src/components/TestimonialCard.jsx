@@ -27,8 +27,8 @@ export const TestimonialCard = () => {
                         key={msgIndex}
                         className={`${
                           message.tag === "sender"
-                            ? "bg-blue-500 text-white ml-auto"
-                            : "bg-gray-100 text-gray-800"
+                            ? "sender"
+                            : "reciver"
                         }`}
                       >
                         {msg}
@@ -37,11 +37,7 @@ export const TestimonialCard = () => {
                   </div>
                 ) : (
                   <div
-                    className={`${
-                      message.tag === "sender"
-                        ? "bg-blue-500 text-white"
-                        : "bg-gray-100 text-gray-800"
-                    }`}
+                    // className={}
                   >
                     {message.userMessage}
                   </div>
