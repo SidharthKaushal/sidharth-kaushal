@@ -27,47 +27,47 @@ export const TestimonialCard = () => {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 20,
           },
           1280: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
         }}
       >
         {TESTIMONIALS.map((t) => (
           <SwiperSlide key={t.id}>
-            {t.messages.map((message, index) => {
-              const isMessageArray = Array.isArray(message.userMessage);
-
-              return (
-                <div
-                  key={index}
-                  className={`${
-                    message.tag === "sender" ? "items-end" : "items-start"
-                  }`}
-                >
-                  <div>{message.userName}</div>
-
-                  {isMessageArray ? (
-                    <div>
-                      {message.userMessage.map((msg, msgIndex) => (
-                        <div
-                          key={msgIndex}
-                          className={`${
-                            message.tag === "sender" ? "sender" : "reciver"
-                          }`}
-                        >
-                          {msg}
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div>{message.userMessage}</div>
-                  )}
-                </div>
-              );
-            })}
+            <div className="bg-light rounded-lg px-5 py-7">
+              {t.messages.map((message, index) => {
+                const isMessageArray = Array.isArray(message.userMessage);
+                return (
+                  <div
+                    key={index}
+                    className={`${
+                      message.tag === "sender" ? "items-end" : "items-start"
+                    }`}
+                  >
+                    <div>{message.userName}</div>
+                    {isMessageArray ? (
+                      <div>
+                        {message.userMessage.map((msg, msgIndex) => (
+                          <div
+                            key={msgIndex}
+                            className={`${
+                              message.tag === "sender" ? "sender" : "reciver"
+                            }`}
+                          >
+                            {msg}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div>{message.userMessage}</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

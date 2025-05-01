@@ -1,5 +1,5 @@
 import { SKILLS } from "../data/skills";
-import { HoverEffect } from "./ui/card-hover-effect";
+import { HoverEffect } from "./ui/skills-card-hover";
 
 export const SkillsCard = () => {
   return (
