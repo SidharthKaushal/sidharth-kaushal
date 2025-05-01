@@ -12,10 +12,10 @@ export const TestimonialCard = () => {
         modules={[Navigation, Autoplay]}
         className="mySwiper"
         loop={true}
-        autoplay={{
-          delay: 3000, // delay in ms between slides
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000, // delay in ms between slides
+        //   disableOnInteraction: false,
+        // }}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -36,15 +36,15 @@ export const TestimonialCard = () => {
         }}
       >
         {TESTIMONIALS.map((t) => (
-          <SwiperSlide key={t.id}>
-            <div className="bg-light rounded-lg px-5 py-7">
+          <SwiperSlide key={t.id} >
+            <div className="bg-light rounded-lg px-5 py-7 h-96">
               {t.messages.map((message, index) => {
                 const isMessageArray = Array.isArray(message.userMessage);
                 return (
                   <div
                     key={index}
                     className={`${
-                      message.tag === "sender" ? "items-end" : "items-start"
+                      message.tag === "reciver" ? "text-end" : "text-start"
                     }`}
                   >
                     <div>{message.userName}</div>
