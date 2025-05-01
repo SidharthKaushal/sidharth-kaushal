@@ -3,45 +3,41 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { TESTIMONIALS } from "../data/testimonial";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
 
 export const TestimonialCard = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   return (
-    <Swiper
-      navigation={true}
-      modules={[Navigation, Autoplay]}
-      className="mySwiper"
-      loop={true}
-      breakpoints={{
-        320: { slidesPerView: 1, spaceBetween: 10 },
-        640: { slidesPerView: 2, spaceBetween: 20 },
-        1024: { slidesPerView: 3, spaceBetween: 20 },
-        1280: { slidesPerView: 4, spaceBetween: 0 },
-      }}
-    >
-      {TESTIMONIALS.map((t, idx) => (
-        <SwiperSlide key={t.id} className="py-4">
-          <div
-            className="relative group p-3 h-96"
-            onMouseEnter={() => setHoveredIndex(idx)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <AnimatePresence>
-              {hoveredIndex === idx && (
-                <motion.span
-                  className="absolute inset-0 bg-neutral-200 dark:bg-slate-800/[0.8] rounded-2xl z-0"
-                  layoutId="hoverBackground"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, transition: { duration: 0.15 } }}
-                  exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.2 } }}
-                />
-              )}
-            </AnimatePresence>
-
-            <div className="relative z-10 bg-light rounded-2xl h-full group-hover:bg-main-light duration-300 p-4 overflow-hidden">
+    <>
+      <Swiper
+        navigation={true}
+        modules={[Navigation, Autoplay]}
+        className="mySwiper"
+        loop={true}
+        // autoplay={{
+        //   delay: 3000, // delay in ms between slides
+        //   disableOnInteraction: false,
+        // }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
+      >
+        {TESTIMONIALS.map((t) => (
+          <SwiperSlide key={t.id}>
+            <div className="bg-light rounded-2xl px-5 pb-7 pt-3 h-96 group hover:bg-main-light duration-300">
               {t.messages.map((message, index) => {
                 const isMessageArray = Array.isArray(message.userMessage);
                 return (
@@ -60,7 +56,7 @@ export const TestimonialCard = () => {
                           <div
                             key={msgIndex}
                             className={`bg-light-dark rounded-xl p-3 duration-300 ${
-                              message.tag === "sender" && "group-hover:bg-[#ffb8a3] group-hover:text-light"
+                              message.tag === "sender" && "group-hover:bg-[#fecfc0]"
                             }`}
                           >
                             {msg}
@@ -68,7 +64,7 @@ export const TestimonialCard = () => {
                         ))}
                       </div>
                     ) : (
-                      <div className="bg-light-dark rounded-xl p-3 group-hover:bg-light duration-300">
+                      <div className="bg-light-dark rounded-xl p-3 group-hover:bg-light ">
                         {message.userMessage}
                       </div>
                     )}
@@ -76,9 +72,9 @@ export const TestimonialCard = () => {
                 );
               })}
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
