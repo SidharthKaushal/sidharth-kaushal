@@ -38,7 +38,7 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <CardImage>{item.image}</CardImage>
+            <CardImage img = {item.image} alt={item.alt}/>
             <CardTitle>{item.language}</CardTitle>
           </Card>
         </div>
@@ -69,10 +69,10 @@ export const CardTitle = ({ className, children }) => {
   );
 };
 
-export const CardImage = ({ className, children, alt }) => {
+export const CardImage = ({ className, img, alt }) => {
   return (
     <img
-      src={children}
+      src={img}
       alt={alt}
       className={cn(
         "w-16 m-auto",
