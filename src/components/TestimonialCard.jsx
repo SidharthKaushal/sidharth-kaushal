@@ -37,7 +37,7 @@ export const TestimonialCard = ({
   };
   const renderTestimonials = () =>
     TESTIMONIALS.map((t, index) => (
-      <div
+      <li
         key={`testimonial-${index}`}
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
@@ -98,7 +98,7 @@ export const TestimonialCard = ({
             </div>
           );
         })}
-      </div>
+      </li>
     ));
 
   return (

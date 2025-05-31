@@ -130,13 +130,13 @@ export const ExperienceCard = ({ e }) => {
         {EXPERIENCE.slice()
           .reverse()
           .map((card, i) => (
-            <motion.div
+            <motion.li
               layoutId={`card-${card.companyName}-${id}`} // Use companyName for unique ID
               key={`card-${card.companyName}-${id}`} // Use companyName for unique ID
               onClick={() => setActive(card)} // Set active experience data
               className=" hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
             >
-              <li className="group grid grid-cols-3 w-full justify-between items-center gap-4 py-5 px-3 border-b-1 border-gray-300 border-opacity-50 hover:bg-light-dark duration-300">
+              <div className="group grid grid-cols-3 w-full justify-between items-center gap-4 py-5 px-3 border-b-1 border-gray-300 border-opacity-50 hover:bg-light-dark duration-300">
                 <div>
                   <h3 className=" text-xl text-black">
                     {card.designation}, <span> {card.location}</span>
@@ -158,8 +158,8 @@ export const ExperienceCard = ({ e }) => {
                     </span>
                   ))}
                 </div>
-              </li>
-            </motion.div>
+              </div>
+            </motion.li>
           ))}
       </ul>
     </>
