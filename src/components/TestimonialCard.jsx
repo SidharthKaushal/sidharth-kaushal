@@ -1,5 +1,5 @@
 import { cn } from "../lib/utils";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TESTIMONIALS } from "../data/testimonial";
 
 export const TestimonialCard = ({
@@ -28,7 +28,6 @@ export const TestimonialCard = ({
       );
     }
   };
-
   const getSpeed = () => {
     if (containerRef.current) {
       const duration =
@@ -36,7 +35,6 @@ export const TestimonialCard = ({
       containerRef.current.style.setProperty("--animation-duration", duration);
     }
   };
-
   const renderTestimonials = () =>
     TESTIMONIALS.map((t, index) => (
       <div
@@ -44,9 +42,10 @@ export const TestimonialCard = ({
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
         className={cn(
-          "bg-light rounded-2xl px-5 pb-7 pt-3 h-96 w-96 relative transition-all duration-300",
-          hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
+          "rounded-2xl px-5 pb-7 pt-3 h-[430px] w-96 relative transition-all duration-300 bg-light",
+          hovered !== null && hovered !== index && "blur-[3px] scale-[0.95]"
         )}
+     
       >
         {t.messages.map((message, msgIndex) => {
           const isMessageArray = Array.isArray(message.userMessage);
@@ -77,7 +76,7 @@ export const TestimonialCard = ({
                       <div
                         key={msgIdx}
                         className={cn(
-                          "rounded-xl p-3 duration-300 max-w-[70%] bg-light-dark relative",
+                          "rounded-xl p-3 duration-300 max-w-[80%] bg-light-dark relative",
                           isLast && (isReceiver ? "chat-left" : "chat-right")
                         )}
                       >
@@ -89,7 +88,7 @@ export const TestimonialCard = ({
               ) : (
                 <div
                   className={cn(
-                    "rounded-xl p-3 duration-300 max-w-[70%] bg-light-dark relative",
+                    "rounded-xl p-3 duration-300 max-w-[80%] bg-light-dark relative",
                     isReceiver ? "chat-left" : "chat-right"
                   )}
                 >
