@@ -43,7 +43,7 @@ export const TestimonialCard = ({
         onMouseLeave={() => setHovered(null)}
         className={cn(
           "rounded-2xl px-5 pb-7 pt-3 h-[430px] w-96 relative transition-all duration-300 bg-light",
-          hovered !== null && hovered !== index && "blur-[3px] scale-[0.95]"
+          hovered !== null && hovered !== index && "blur-[2px] scale-[0.98]"
         )}
      
       >

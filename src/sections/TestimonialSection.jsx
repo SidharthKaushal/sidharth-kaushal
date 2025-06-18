@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionHeadingPrimary } from "../components/SectionHeadingPrimary";
 import { TestimonialCard } from "../components/TestimonialCard";
 export const TestimonialSection = () => {
@@ -7,11 +6,8 @@ export const TestimonialSection = () => {
       <div className="container">
         <SectionHeadingPrimary
           primaryHeading={"Testimonials"}
-          secondaryHeading={"Explore my journey"}
-          description={`With 5+ years of experience as a front-end developer, I have worked
-                on various projects, collaborating with teams to create engaging and
-                user-friendly websites while ensuring high-quality results and
-                client satisfaction.`}
+          secondaryHeading={"Words from Clients"}
+          description={`Over the years, I’ve had the privilege of working with diverse teams and clients on impactful front-end projects. Here’s what they say about the experience of working together and the results delivered.`}
         />
         <TestimonialCard />
       </div>
