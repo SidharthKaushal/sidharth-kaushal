@@ -1,4 +1,4 @@
-import html from '../assets/images/skill/html5.png'
+import html from '../assets/images/skill/html5.png' 
 import css from '../assets/images/skill/css3.png'
 import sass from '../assets/images/skill/sass.png'
 import tailwind from '../assets/images/skill/tailwind-css.png'
@@ -10,6 +10,7 @@ import git from '../assets/images/skill/git.png'
 import canva from '../assets/images/skill/canva.png'
 import figma from '../assets/images/skill/figma.png'
 import adobe from '../assets/images/skill/adobe-xd.png'
+import shopify from '../assets/images/skill/shopify.png'
 import wordpress from '../assets/images/skill/wordpress.png'
 import seo from '../assets/images/skill/seo.png'
 
@@ -94,9 +95,9 @@ export const SKILLS = [
     {
         id: 11,
         percentage: 80,
-        language: "Adobe XD",
-        image: adobe,
-        alt: "Adobe XD logo"
+        language: "Shopify",
+        image: shopify,
+        alt: "Shopify logo"
     },
     {
         id: 12,

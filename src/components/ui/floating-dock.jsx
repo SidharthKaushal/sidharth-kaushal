@@ -137,7 +137,7 @@ function IconContainer({ mouseX, title, icon, href }) {
   };
 
   return (
-    <Link to={href}>
+    <a href={href} {...(href?.endsWith(".pdf") && { download: true })}>
       <motion.div
         ref={ref}
         style={{ width, height }}
@@ -181,6 +181,6 @@ function IconContainer({ mouseX, title, icon, href }) {
           {icon}
         </motion.div>
       </motion.div>
-    </Link>
+    </a>
   );
 }

@@ -12,7 +12,7 @@ export const FirstSketch = () => {
               From First Sketch to Final Launch
             </h2>
             <Link
-              to="*"
+              to="/"
               className="group text-light bg-main rounded-full px-6 py-3 text-md flex items-center gap-2 hover:bg-main-hover  transition duration-300"
             >
               <LuPhone className="transition-transform duration-300 group-hover:rotate-45 " />
@@ -21,7 +21,7 @@ export const FirstSketch = () => {
           </div>
           <ul className="grid grid-cols-4 justify-between pt-10">
             {FINAL_LAUNCH.map((el) => (
-              <FinalLaunchCards {...el} key={el.id}/>
+              <FinalLaunchCards {...el} key={el.title}/>
             ))}
           </ul>
         </div>

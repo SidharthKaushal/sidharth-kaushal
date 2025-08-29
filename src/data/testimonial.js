@@ -87,7 +87,7 @@ export const TESTIMONIALS = [
       id: 6,
       messages: [
         {
-          tag: "reciver", userName: "sidharth", userMessage: ["Hi Anjali, just checking in — is the SEO dashboard making sense?", "hasfdasdsadsa"],
+          tag: "reciver", userName: "sidharth", userMessage: ["Hi Anjali, just checking in — is the SEO dashboard making sense?"],
         },
         {
           tag: "sender", userName: "Anjali", userMessage: [
