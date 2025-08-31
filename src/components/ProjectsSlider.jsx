@@ -52,7 +52,7 @@ export const ProjectsSlider = () => {
 const ProjectSlideCard = (el) => {
   return (
     <div className="rounded-2xl overflow-hidden relative  after:content-[''] after:absolute after:h-full after:w-full after:top-0 after:left-0 after:bg-gradient-to-t after:from-black/70 after:to-black/0">
-      <img src={el.bannerImage} alt={el.banneAlt} />
+      <img src={el.bannerImage} alt={el.banneAlt} loading="eager"/>
       <div className="p-6 absolute bottom-0 left-0 w-full z-10">
         <h2 className="text-2xl font-semibold text-light mt-4">{el.title}</h2>
         <ul className="flex flex-wrap gap-3 mt-2 text-lg text-light">

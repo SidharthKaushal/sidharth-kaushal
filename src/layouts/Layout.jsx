@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../common/Header";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import { Footer } from "../common/Footer";
 
 export default function Layout() {
   useEffect(() => {
@@ -27,11 +28,11 @@ export default function Layout() {
 
   return (
     <>
-    
       <Header />
       <main className="site_container">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }

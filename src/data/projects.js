@@ -1,9 +1,9 @@
-import matsbitbnr from "../assets/images/projects/masthbite.jpg";
-import txprt4ubnr from "../assets/images/projects/taxpert4you.jpg";
-import oniosomebnr from "../assets/images/projects/oniosome.jpg";
-import leanwisdombnr from "../assets/images/projects/leanwisdom.jpg";
-import rentonbnr from "../assets/images/projects/renton-eu.jpg";
-import vidyavikasbnr from "../assets/images/projects/vidyavikas.jpg";
+import matsbitbnr from "../assets/images/projects/masthbite.webp";
+import txprt4ubnr from "../assets/images/projects/taxpert4you.webp";
+import oniosomebnr from "../assets/images/projects/oniosome.webp";
+import leanwisdombnr from "../assets/images/projects/leanwisdom.webp";
+import rentonbnr from "../assets/images/projects/renton-eu.webp";
+import vidyavikasbnr from "../assets/images/projects/vidyavikas.webp";
 export const PORTFOLIODATA = [
   {
     id: 0,

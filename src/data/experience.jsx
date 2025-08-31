@@ -1,11 +1,11 @@
-import webshk1 from '../assets/images/experience/webshark-project-1.jpg'
-import webshk2 from '../assets/images/experience/webshark-project-2.jpg'
-import webshk3 from '../assets/images/experience/webshark-project-3.jpg'
-import webshk4 from '../assets/images/experience/webshark-project-4.jpg'
-import rackrn1 from '../assets/images/experience/rackron-project-1.jpg'
-import rackrn3 from '../assets/images/experience/rackron-project-3.jpg'
-import rackrn2 from '../assets/images/experience/rackron-project-2.jpg'
-import rackrn4 from '../assets/images/experience/rackron-project-4.jpg'
+import webshk1 from '../assets/images/experience/webshark-project-1.webp'
+import webshk2 from '../assets/images/experience/webshark-project-2.webp'
+import webshk3 from '../assets/images/experience/webshark-project-3.webp'
+import webshk4 from '../assets/images/experience/webshark-project-4.webp'
+import rackrn1 from '../assets/images/experience/rackron-project-1.webp'
+import rackrn3 from '../assets/images/experience/rackron-project-3.webp'
+import rackrn2 from '../assets/images/experience/rackron-project-2.webp'
+import rackrn4 from '../assets/images/experience/rackron-project-4.webp'
 export const EXPERIENCE = [
   {
     companyName: "Rackron Technologies Pvt. Ltd.",
