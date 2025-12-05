@@ -28,7 +28,7 @@ export const LINKS = [
   {
     title: "Home",
     icon: <img src={Favicon} width={60} height={60} alt="Aceternity Logo" />,
-    href: "/",
+    href: "#",
   },
   {
     title: "Skills",
@@ -50,7 +50,7 @@ export const LINKS = [
     icon: (
       <LuFileDown className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "./assets/pdf-test.pdf",
+    href: "./assets/Sidharth-Kaushal-Resume.pdf",
     downlodable: true,
   },
 ];

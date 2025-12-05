@@ -1,4 +1,4 @@
-import aboutImg from "../assets/images/about-img.png";
+import aboutImg from "../assets/images/about-img.jpg";
 export const AboutUs = () => {
   return (
     <section
