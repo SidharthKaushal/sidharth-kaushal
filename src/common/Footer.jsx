@@ -4,19 +4,20 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa6";
+import { LinkPreview } from "../components/ui/link-preview";
 export const Footer = () => {
   const socialIcons = [
-    { name: "GitHub", url: "", icons: <FaGithub /> },
-    { name: "LinkedIn", url: "", icons: <FaLinkedinIn /> },
-    { name: "Twitter", url: "", icons: <FaTwitter /> },
-    { name: "Instagram", url: "", icons: <FaInstagram /> },
+    { name: "GitHub", url: "https://github.com/SidharthKaushal", icons: <FaGithub /> },
+    { name: "LinkedIn", url: "https://in.linkedin.com/in/sidharth-kaushal-frontend-devloper", icons: <FaLinkedinIn /> },
+    // { name: "Twitter", url: "", icons: <FaTwitter /> },
+    // { name: "Instagram", url: "", icons: <FaInstagram /> },
   ];
   return (
     <section className="py-16 bg-main">
       <div className="container">
         <div className="border-b-1 pb-5 text-center ">
           <h2 className="font-bold text-light text-5xl relative">
-            sidharthkaushal.dev@gmail.com
+            <a href="mailto:sidharthkaushal369@gmail.com">sidharthkaushal369@gmail.com</a>
           </h2>
           <p className="text-secondary mt-3 text-md md:max-w-xl m-auto">
             Let’s connect and craft digital experiences that are not only
@@ -52,10 +53,14 @@ export const SocialLinks = (link) => {
 export const CopyRight = () => {
   return (
     <p className="text-center mt-5 mb-10 text-md">
-      © 2025 Developed & Designed by{" "}
-      <a href="#linkedi" target="_blank" className="font-bold text-light ">
+      © 2025 Designed & Developed by{" "}
+      <LinkPreview
+        url="https://in.linkedin.com/in/sidharth-kaushal-frontend-devloper"
+        className="font-bold text-light"
+      >
+        {" "}
         Sidharth Kaushal.
-      </a>{" "}
+      </LinkPreview>{" "}
       All Rights Reserved.
     </p>
   );

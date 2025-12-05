@@ -15,8 +15,8 @@ export const Home = () => {
       <EducationSection />
       <Skills />
       <CaseStudySec />
-      <FirstSketch />
-      <TestimonialSection />
+      {/* <FirstSketch /> */}
+      {/* <TestimonialSection /> */}
     </>
   );
 };

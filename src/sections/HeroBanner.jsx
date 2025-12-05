@@ -27,13 +27,13 @@ export const HeroBanner = () => {
             blending creativity with expertise for accessibility and an
             exceptional journey across all devices.
           </div>
-          <Link
+          {/* <Link
             to="#"
             className="group mt-10 text-main bg-light rounded-full px-10 py-5 text-md flex items-center gap-2 hover:bg-light-dark  transition duration-300"
           >
             <LuPhone className="transition-transform duration-300 group-hover:rotate-45 " />
             Contact Me
-          </Link>
+          </Link> */}
         </div>
         <ProjectsSlider />
       </div>
