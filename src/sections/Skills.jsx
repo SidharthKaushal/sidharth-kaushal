@@ -2,7 +2,7 @@ import { SectionHeadingPrimary } from "../components/SectionHeadingPrimary";
 import { SkillsCard } from "../components/SkillsCard";
 export const Skills = () => {
   return (
-    <section className="py-16" id="skills">
+    <section className="pb-16 md:pb-28" id="skills">
       <div className="container">
         <SectionHeadingPrimary
           primaryHeading={"My Skills"}

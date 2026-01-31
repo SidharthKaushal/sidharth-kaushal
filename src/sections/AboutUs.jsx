@@ -2,19 +2,19 @@ import aboutImg from "../assets/images/about-img.jpg";
 export const AboutUs = () => {
   return (
     <section
-      className="py-28 -mt-20 bg-ternary rounded-t-[70px] rounded-r-[70px]"
+      className="py-16 md:py-28 -mt-20 bg-ternary md:rounded-t-[70px] md:rounded-r-[70px]"
       id="aboutme"
     >
       <div className="container">
-        <div class="grid grid-cols-2 md:gap-10 items-start">
-          <div className="sticky top-20">
+        <div className="grid md:grid-cols-2 md:gap-10 items-start">
+          <div className="mt-10 md:mt-0 md:sticky top-20 order-2 md:order-0">
             <h2 className="text-black text-lg mb-3 ps-4 relative before:content-[''] before:h-[8px] before:w-[8px] before:bg-main before:absolute before:rounded-full before:left-0 before:top-[10px]">
               About Me
             </h2>
-            <h3 className="capitalize text-5xl leading-14 text-black">
+            <h3 className="capitalize text-3xl md:text-5xl md:leading-14 text-black">
               My Professional Identity
             </h3>
-            <p className="leading-8 text-lg mt-4">
+            <p className="leading-6 md:leading-8 md:text-lg mt-3 md:mt-4">
               I’m <strong> Sidharth Kaushal </strong>, a passionate{" "}
               <strong> Front-End Developer </strong>
               dedicated to building clean, responsive, and user-focused

@@ -9,40 +9,40 @@ export const LINKS = [
     icon: (
       <LuUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#aboutme",
+    href: "/#aboutme",
   },
   {
     title: "Experience",
     icon: (
       <PiSuitcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#experience",
+    href: "/#experience",
   },
   {
     title: "Education",
     icon: (
       <PiGraduationCap className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#education",
+    href: "/#education",
   },
   {
     title: "Home",
-    icon: <img src={Favicon} width={60} height={60} alt="Aceternity Logo" />,
-    href: "#",
+    icon: <img src={Favicon} width={60} height={60} alt="Sidharth Logo" />,
+    href: "/",
   },
   {
     title: "Skills",
     icon: (
       <PiBrainLight className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#skills",
+    href: "/#skills",
   },
   {
     title: "Projects",
     icon: (
       <IoGridOutline className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#projects",
+    href: "/#projects",
   },
 
   {

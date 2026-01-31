@@ -4,7 +4,7 @@ import { EDUCATION } from "../data/education";
 export const EducationSection = () => {
   return (
     <>
-      <section className="py-16" id="education">
+      <section className="pb-16 md:pb-28" id="education">
         <div className="container">
           <SectionHeadingPrimary
             primaryHeading={" Education"}

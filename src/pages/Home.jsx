@@ -14,7 +14,7 @@ export const Home = () => {
       <ExperienceSection />
       <EducationSection />
       <Skills />
-      <CaseStudySec />
+      <CaseStudySec buttonLinkText = "View all case studies" sectionHeading = {true} showProjects = {4}/>
       {/* <FirstSketch /> */}
       {/* <TestimonialSection /> */}
     </>

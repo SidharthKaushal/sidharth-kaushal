@@ -13,26 +13,26 @@ export const Footer = () => {
     // { name: "Instagram", url: "", icons: <FaInstagram /> },
   ];
   return (
-    <section className="py-16 bg-main">
+    <footer className="py-10 md:py-16 bg-main">
       <div className="container">
         <div className="border-b-1 pb-5 text-center ">
-          <h2 className="font-bold text-light text-5xl relative">
+          <h2 className="font-bold text-light text-lg md:text-5xl relative">
             <a href="mailto:sidharthkaushal369@gmail.com">sidharthkaushal369@gmail.com</a>
           </h2>
-          <p className="text-secondary mt-3 text-md md:max-w-xl m-auto">
+          <p className="text-secondary mt-3 md:text-md md:max-w-xl m-auto">
             Let’s connect and craft digital experiences that are not only
             meaningful, but also modern, user-focused, and built to make a
             lasting impact.
           </p>
           <ul className="flex align-center justify-center gap-4 text-xl mt-5">
-            {socialIcons.map((link) => (
-              <SocialLinks {...link} />
+            {socialIcons.map((link, i) => (
+              <SocialLinks {...link} key={link.name}/>
             ))}
           </ul>
         </div>
         <CopyRight />
       </div>
-    </section>
+    </footer>
   );
 };
 export const SocialLinks = (link) => {
@@ -52,7 +52,7 @@ export const SocialLinks = (link) => {
 
 export const CopyRight = () => {
   return (
-    <p className="text-center mt-5 mb-10 text-md">
+    <div className="text-center mt-5 md:mb-10 md:text-md">
       © 2025 Designed & Developed by{" "}
       <LinkPreview
         url="https://in.linkedin.com/in/sidharth-kaushal-frontend-devloper"
@@ -62,6 +62,6 @@ export const CopyRight = () => {
         Sidharth Kaushal.
       </LinkPreview>{" "}
       All Rights Reserved.
-    </p>
+    </div>
   );
 };

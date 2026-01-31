@@ -4,16 +4,16 @@ import { LinkPreview } from "../components/ui/link-preview";
 import { ProjectsSlider } from "../components/ProjectsSlider";
 export const HeroBanner = () => {
   return (
-    <section className="py-16 pt-30 bg-[url(./assets/images/banner-img.svg)] bg-no-repeat bg-[70%] bg-top bg-main">
+    <section className="py-16 pt-12 mt:pt-30 bg-[url(./assets/images/banner-img.svg)] bg-no-repeat bg-[70%] bg-top bg-main">
       <div className="container">
         <div className="flex flex-col justify-between items-center text-center">
           <h2 className="text-light text-xl mb-3 ps-4 relative before:content-[''] before:h-[8px] before:w-[8px] before:bg-light before:absolute before:rounded-full before:left-0 before:top-[10px]">
             Crafting clean, functional, and modern web experiences.
           </h2>
-          <h3 className="capitalize text-[90px] text-light font-semibold leading-26 max-w-7xl my-5">
+          <h3 className="capitalize text-[44px] md:text-[90px] text-light font-semibold leading-[50px] md:leading-26 max-w-7xl my-5">
             Hi, I’m Sidharth - Front End Web Developer
           </h3>
-          <div className="leading-8 text-xl text-light-dark/50 w-3/4">
+          <div className="md:leading-8 text-md md:text-xl text-light-dark/50 md:w-3/4">
             To craft seamless, user-focused web experiences using cutting-edge
             front-end technologies, delivering innovative, responsive designs
             that enhance digital presence and user satisfaction. I aim to create

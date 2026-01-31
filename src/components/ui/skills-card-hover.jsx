@@ -9,7 +9,7 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-7",
+        "grid grid-cols-2 lg:grid-cols-7 mt-3 md:mt-0",
         className
       )}
     >
@@ -51,7 +51,7 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-light border border-transparent dark:border-white/[0.2]  relative z-20",
+        "rounded-2xl h-full w-full md:p-4 overflow-hidden bg-light border border-transparent dark:border-white/[0.2]  relative z-20",
         className
       )}
     >
@@ -63,7 +63,7 @@ export const Card = ({ className, children }) => {
 };
 export const CardTitle = ({ className, children }) => {
   return (
-    <p className={cn("mt-5 text-center text-md", className)}>
+    <p className={cn("mt-3 md:mt-5 text-center text-sm md:text-md", className)}>
       {children}
     </p>
   );
@@ -75,7 +75,7 @@ export const CardImage = ({ className, img, alt }) => {
       src={img}
       alt={alt}
       className={cn(
-        "w-16 m-auto",
+        "w-12 md:w-16 m-auto",
         className
       )}
     ></img>

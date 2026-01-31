@@ -6,11 +6,11 @@ import rentonbnr from "../assets/images/projects/renton-eu.webp";
 import vidyavikasbnr from "../assets/images/projects/vidyavikas.webp";
 export const PORTFOLIODATA = [
   {
-    id: 0,
+    id: 'mathsbite-tutoring-platform',
     title: "Mathsbite – India’s Best Tutoring Platform",
     tags: ["EdTech", "Education", "Tutoring", "Web Application"],
     bannerImage: matsbitbnr,
-    banneAlt: "Mathsbite banner image",
+    bannerAlt: "Mathsbite banner image",
     images: [
       {
         src: "path/to/mathsbite-homepage-visual1.jpg",
@@ -114,11 +114,11 @@ export const PORTFOLIODATA = [
     },
   },
   {
-    id: 2,
+    id: 'taxpert4you-service-management',
     title: "Taxpert4you – Service Request Management",
     tags: ["FinTech", "Taxation", "Dashboard", "Service Management"],
     bannerImage: txprt4ubnr,
-    banneAlt: "Taxpert4you banner image",
+    bannerAlt: "Taxpert4you banner image",
     images: [
       {
         src: "path/to/taxpert4you-service-table.jpg",
@@ -129,79 +129,81 @@ export const PORTFOLIODATA = [
         alt: "Service request management dashboard",
       },
     ],
-    url: "/service-requests",
-    header: {
-      description:
-        "A feature within the Taxpert4you platform that allows users to create, view, and manage their tax compliance and dispute resolution requests.",
-      downloadLinks: [],
-    },
-    story: {
-      title: "The Story of the Service Request Feature",
-      content:
-        "To complement the tax compliance and dispute management services, a dedicated service request system was developed. This feature provides a centralized hub where clients can initiate new service requests, track their progress, and communicate with tax professionals. The goal was to provide transparency and a single point of contact for all client needs.",
-      images: [
-        {
-          src: "path/to/taxpert4you-story-service-image.jpg",
-          alt: "Illustration of a streamlined service request process",
-        },
-      ],
-    },
-    challenge: {
-      title: "The Challenge",
-      content:
-        "The challenge was to build an intuitive and efficient system that could manage a high volume of complex tax-related requests. Each request required specific details, documentation, and a clear timeline. The platform needed to ensure that requests were categorized correctly, assigned to the right experts, and that users had a clear view of the status and deadlines.",
-      images: [
-        {
-          src: "path/to/taxpert4you-challenge-service-image.jpg",
-          alt: "Graphic depicting the complexity of managing tax requests",
-        },
-      ],
-    },
-    solution: {
-      title: "What We Have Done",
-      content:
-        "We implemented a dynamic service request table with key columns: 'Request Title,' 'Category,' 'Sub Category,' 'Comments,' 'Deadline,' 'Status,' and 'Actions.' This design enables users to quickly scan and understand the state of their requests. The system supports detailed request creation, including a comments section for remarks and the ability to track the status (e.g., 'Active'). Pagination was included to handle a large number of entries efficiently.",
-      images: [
-        {
-          src: "path/to/taxpert4you-solution-service-image1.jpg",
-          alt: "Mockup of the service request creation form",
-        },
-        {
-          src: "path/to/taxpert4you-solution-service-image2.jpg",
-          alt: "A close-up view of the service request table",
-        },
-      ],
-    },
-    keyFeatures: {
-      title: "Key Features of the Service Request Module",
-      features: [
-        "Centralized dashboard for all service requests",
-        "Detailed request categorization (e.g., Tax Compliance, GST Notice)",
-        "Clear status tracking ('Active')",
-        "Comment/Remarks section for detailed communication",
-        "Defined deadlines for each request",
-        "Pagination for easy navigation through multiple requests",
-      ],
-      images: [
-        {
-          src: "path/to/taxpert4you-features-service-image.jpg",
-          alt: "Service request table with clear headers and data",
-        },
-      ],
-    },
-    results: {
-      title: "The Result",
-      content:
-        "The service request management feature has significantly improved the user experience on Taxpert4you. It provides a transparent, organized, and stress-free way for clients to manage their tax compliance and dispute needs. By centralizing all communication and documentation, it ensures that no request is lost and that all deadlines are met effectively.",
-      stats: [],
+    url: "https://taxpert4you.vercel.app",
+    detailedCaseStudy: {
+      header: {
+        description:
+          "A feature within the Taxpert4you platform that allows users to create, view, and manage their tax compliance and dispute resolution requests.",
+        downloadLinks: [],
+      },
+      story: {
+        title: "The Story of the Service Request Feature",
+        content:
+          "To complement the tax compliance and dispute management services, a dedicated service request system was developed. This feature provides a centralized hub where clients can initiate new service requests, track their progress, and communicate with tax professionals. The goal was to provide transparency and a single point of contact for all client needs.",
+        images: [
+          {
+            src: "path/to/taxpert4you-story-service-image.jpg",
+            alt: "Illustration of a streamlined service request process",
+          },
+        ],
+      },
+      challenge: {
+        title: "The Challenge",
+        content:
+          "The challenge was to build an intuitive and efficient system that could manage a high volume of complex tax-related requests. Each request required specific details, documentation, and a clear timeline. The platform needed to ensure that requests were categorized correctly, assigned to the right experts, and that users had a clear view of the status and deadlines.",
+        images: [
+          {
+            src: "path/to/taxpert4you-challenge-service-image.jpg",
+            alt: "Graphic depicting the complexity of managing tax requests",
+          },
+        ],
+      },
+      solution: {
+        title: "What We Have Done",
+        content:
+          "We implemented a dynamic service request table with key columns: 'Request Title,' 'Category,' 'Sub Category,' 'Comments,' 'Deadline,' 'Status,' and 'Actions.' This design enables users to quickly scan and understand the state of their requests. The system supports detailed request creation, including a comments section for remarks and the ability to track the status (e.g., 'Active'). Pagination was included to handle a large number of entries efficiently.",
+        images: [
+          {
+            src: "path/to/taxpert4you-solution-service-image1.jpg",
+            alt: "Mockup of the service request creation form",
+          },
+          {
+            src: "path/to/taxpert4you-solution-service-image2.jpg",
+            alt: "A close-up view of the service request table",
+          },
+        ],
+      },
+      keyFeatures: {
+        title: "Key Features of the Service Request Module",
+        features: [
+          "Centralized dashboard for all service requests",
+          "Detailed request categorization (e.g., Tax Compliance, GST Notice)",
+          "Clear status tracking ('Active')",
+          "Comment/Remarks section for detailed communication",
+          "Defined deadlines for each request",
+          "Pagination for easy navigation through multiple requests",
+        ],
+        images: [
+          {
+            src: "path/to/taxpert4you-features-service-image.jpg",
+            alt: "Service request table with clear headers and data",
+          },
+        ],
+      },
+      results: {
+        title: "The Result",
+        content:
+          "The service request management feature has significantly improved the user experience on Taxpert4you. It provides a transparent, organized, and stress-free way for clients to manage their tax compliance and dispute needs. By centralizing all communication and documentation, it ensures that no request is lost and that all deadlines are met effectively.",
+        stats: [],
+      },
     },
   },
   {
-    id: 3,
+    id: 'oniosome-healthcare',
     title: "Oniosome Healthcare – Innovation in Novel Drug Delivery Systems",
     tags: ["Healthcare", "Pharma", "Biotech", "CRO"],
     bannerImage: oniosomebnr,
-    banneAlt: "Oniosome Healthcare banner image",
+    bannerAlt: "Oniosome Healthcare banner image",
     images: [
       {
         src: "path/to/oniosome-main-image1.jpg",
@@ -212,7 +214,7 @@ export const PORTFOLIODATA = [
         alt: "Oniosome research and development graphic",
       },
     ],
-    url: "/case-studies/oniosome",
+    url: "https://oniosome.com",
     detailedCaseStudy: {
       header: {
         description:
@@ -302,11 +304,11 @@ export const PORTFOLIODATA = [
     },
   },
   {
-    id: 4,
+    id: 'leanwisdom-learning-platform',
     title: "LeanWisdom – Future-Forward Learning for Career Growth",
     tags: ["EdTech", "Agile", "SAFe", "Certifications", "AI"],
     bannerImage: leanwisdombnr,
-    banneAlt: "LeanWisdom banner image",
+    bannerAlt: "LeanWisdom banner image",
     images: [
       {
         src: "path/to/leanwisdom-main1.jpg",
@@ -317,7 +319,7 @@ export const PORTFOLIODATA = [
         alt: "LeanWisdom learners and trainers",
       },
     ],
-    url: "/case-studies/leanwisdom",
+    url: "https://www.leanwisdom.com/",
     detailedCaseStudy: {
       header: {
         description:
@@ -325,7 +327,7 @@ export const PORTFOLIODATA = [
         downloadLinks: [
           {
             platform: "Website",
-            url: "https://www.leanwisdom.com",
+            url: "https://www.leanwisdom.com/",
           },
         ],
       },
@@ -413,7 +415,7 @@ export const PORTFOLIODATA = [
     },
   },
   {
-    id: 5,
+    id: 'renton-technologies',
     title: "Renton Technologies – Driving Digital Transformation",
     tags: [
       "Software Development",
@@ -422,7 +424,7 @@ export const PORTFOLIODATA = [
       "Custom Solutions",
     ],
     bannerImage: rentonbnr,
-    banneAlt: "Renton Technologies banner image",
+    bannerAlt: "Renton Technologies banner image",
     images: [
       {
         src: "path/to/renton-main1.jpg",
@@ -536,11 +538,11 @@ export const PORTFOLIODATA = [
     },
   },
   {
-    id: 6,
+    id: 'vviet-engineering-institute',
     title: "VVIET – Shaping Future Engineers and Leaders",
     tags: ["Education", "Engineering", "MBA", "MCA", "Research"],
     bannerImage: vidyavikasbnr,
-    banneAlt: "Vidya Vikas Institute banner image",
+    bannerAlt: "Vidya Vikas Institute banner image",
     images: [
       {
         src: "path/to/vviet-main1.jpg",

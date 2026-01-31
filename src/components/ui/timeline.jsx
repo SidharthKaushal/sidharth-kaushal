@@ -18,7 +18,7 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
   return (
     <div className="w-full" ref={containerRef}>
-      <div ref={ref} className="relative mx-auto pb-20">
+      <div ref={ref} className="relative mx-auto md:pb-20">
         {data
           .slice()
           .reverse()
@@ -28,7 +28,7 @@ export const Timeline = ({ data }) => {
               className="flex justify-start pt-10 md:pt-20 md:gap-10"
             >
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-7xl md:w-full">
-                <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full flex items-center justify-center">
+                <div className="md:h-10 absolute left-3 md:left-3 w-10 rounded-full flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full bg-black dark:bg-neutral-800 border-6 border-ternary dark:border-neutral-700 p-2" />
                 </div>
                 <div className="hidden md:block md:pl-20 ">
@@ -40,7 +40,7 @@ export const Timeline = ({ data }) => {
                   </p>
                 </div>
               </div>
-              <div className="relative pl-20 pr-4 md:pl-4 md:w-5xl">
+              <div className="relative ml-12 md:pl-20 pr-4 md:pl-4 md:w-5xl">
                 <h3 className="block md:hidden text-xl text-black md:pl-20 md:text-5xl fdark:text-neutral-500 mb-2">
                   {item.designation}
                 </h3>
