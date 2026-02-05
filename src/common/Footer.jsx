@@ -55,7 +55,7 @@ export const CopyRight = () => {
     <div className="text-center mt-5 md:mb-10 md:text-md">
       © 2025 Designed & Developed by{" "}
       <LinkPreview
-        url="https://in.linkedin.com/in/sidharth-kaushal-frontend-devloper"
+        url="https://www.linkedin.com/in/sidharth-kaushal-frontend-developer/"
         className="font-bold text-light"
       >
         {" "}
