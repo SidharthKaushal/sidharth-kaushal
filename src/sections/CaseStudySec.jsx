@@ -22,7 +22,7 @@ export const CaseStudySec = ({ buttonLinkText, sectionHeading, showProjects }) =
             <span className="font-semibold text-black font-primary text-xl capitalize">
               {buttonLinkText}
             </span>
-            <span className="flex items-center justify-center w-14 h-14 rounded-full bg-main text-white group-hover:bg-main-hover  transition duration-300">
+            <span className="flex items-center justify-center w-14 md:w-24 h-14 md:h-24 rounded-full bg-main text-white group-hover:bg-main-hover  transition duration-300">
               <FaArrowRight className="w-5 h-5" />
             </span>
           </Link>

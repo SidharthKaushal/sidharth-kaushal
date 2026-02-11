@@ -14,7 +14,7 @@ export const EXPERIENCE = [
     designation: "Web Designer",
     startDate: "January 2023",
     endDate: "May 2024",
-    location: "Chandigarh",
+    location: "Mohali - Punjab",
     country: "IN",
     content: (el) => (
       <div>
@@ -138,7 +138,7 @@ export const EXPERIENCE = [
     companyName: "WebGarh Solutions",
     designation: "Web Developer",
     startDate: "March 2025",
-    endDate: "December 2025",
+    endDate: "January 2026",
     location: "Punjab",
     country: "IN",
     content: (el) => (
